@@ -8,7 +8,9 @@
     //background-image: url("../img/header-bg.jpg");
     left: 0;
     right: 0;
-    background-color: #fff;
+    background: #0099F7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .project-name {  

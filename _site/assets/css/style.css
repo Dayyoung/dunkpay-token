@@ -317,7 +317,7 @@ a:hover { text-decoration: underline; }
 
 .site-footer-credits { color: #819198; }
 
-.page-header { background-position: center center; left: 0; right: 0; background-color: #fff; }
+.page-header { background-position: center center; left: 0; right: 0; background: #0099F7; /* fallback for old browsers */ background: -webkit-linear-gradient(to top, #F11712, #0099F7); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(to top, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .project-name { margin: 0 auto; width: 290px; height: 65px; background-size: 100%; background-image: url("../img/dunkpay-title.png"); background-repeat: no-repeat; color: #00ff0000; font-size: 0px; }
 

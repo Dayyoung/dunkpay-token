@@ -6,3 +6,4 @@ repository: 'Dayyoung/dunkpay-token'
 show_downloads : false
 github:
 repository_url: https://github.com/Dayyoung/dunkpay-token
+show_downloads: /DunkPay_white_paper.pdf
