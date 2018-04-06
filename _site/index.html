@@ -4,207 +4,151 @@
     <meta charset="UTF-8">
 
 <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>DunkPay.com | Javascript library for cryptocurrency payment.</title>
-<meta property="og:title" content="DunkPay.com" />
+<title>DunkPay (ERC20) Token Sale | DunkPay Token</title>
+<meta property="og:title" content="DunkPay (ERC20) Token Sale" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Javascript library for cryptocurrency payment." />
-<meta property="og:description" content="Javascript library for cryptocurrency payment." />
+<meta name="description" content="Token Pre-Sale" />
+<meta property="og:description" content="Token Pre-Sale" />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="DunkPay.com" />
+<meta property="og:site_name" content="DunkPay Token" />
 <script type="application/ld+json">
-{"name":"DunkPay.com","description":"Javascript library for cryptocurrency payment.","author":null,"@type":"WebSite","url":"http://localhost:4000/","publisher":null,"image":null,"headline":"DunkPay.com","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+{"name":"DunkPay Token","description":"Token Pre-Sale","author":null,"@type":"WebSite","url":"http://localhost:4000/","publisher":null,"image":null,"headline":"DunkPay (ERC20) Token Sale","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <meta name="description" content="Javascript library for cryptocurrency payment."/>
+    <meta name="description" content="Token Pre-Sale"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/assets/css/style.css?v=de9c6b3877721fcfebcfa61e709324a5a91022d4">
+    <link rel="stylesheet" href="/assets/css/style.css?v=36d4d7de6227e70a0b8e5d6c4e3c285a7cb9ddf7">
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">DunkPay.com</h1>
-      <h2 class="project-tagline">Javascript library for cryptocurrency payment.</h2>
+      <h1 class="project-name">DunkPay Token</h1>
+      <h2 class="project-tagline">Token Pre-Sale</h2>
       
-        <a href="https://github.com/Dayyoung/dunkpay" class="btn">View on GitHub</a>
+        <a href="http://github.com/Dayyoung/dunkpay" class="btn">View on GitHub</a>
       
       
     </section>
 
     <section class="main-content">
-      <h1 id="dunkpaycom">DunkPay.com</h1>
+      <h1 id="dunkpay-erc20-token-sale">DunkPay (ERC20) Token Sale</h1>
 
-<p>DunkPay.com is the service for users who want to pay with cryptocurrency.
-Create a link, copy it and sell what you want.
-As soon as transaction is completed, confirmation process starts immediately
-Transactions are guaranteed by blockchain method.</p>
+<p>This white paper is related to selling DunkPay tokens. DunkPay is currently in service as a billing system with Cryptocurrency. DunkPay can currently make payments using BTC, BCH, ETH Cryptocurrency. If the user makes a payment through DunkPay, a 1% fee will be charged. We have decided to sell token the right to get this fee. DunkPay is a running  service. No specific sales terms or agreement. Refunds are also available at any time.</p>
 
-<p>“Play ball. Make your dream.”</p>
+<h1 id="the-rules-are-very-simple">The rules are very simple.</h1>
+<p>You can acquire a DunkPay token when you deposit to a smart contract address. DunkPay token users receive an additional token once a month. All functions such as purchases, refunds, bankruptcies, etc. operate as smart contracts.</p>
 
-<h1 id="installation">INSTALLATION</h1>
-<p>Include script on your site.</p>
+<h1 id="dunkpay-token-erc20---dnk">DunkPay Token (ERC20 - DNK)</h1>
+<p>Total volume : 10,000 DNK
+Sales volume : 4,900 DNK (49%)
+Additional volume : Airdrop for token users.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/javascript"</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"https://www.dunkpay.com/dunkpay.js"</span><span class="o">&gt;&lt;</span><span class="sr">/script</span><span class="err">&gt;
-</span></code></pre></div></div>
+<h1 id="dunkpay-token-airdrop">DunkPay Token Airdrop</h1>
 
-<h1 id="usage">USAGE</h1>
+<p>The rules are very simple. Take a snapshot on the first day of the month (GMT 00:00). You will receive a DunkPay token by Airdrop based on (holdings / total issue volume)
+(However, if there is no fee income, it may carry forward.)</p>
 
-<p>For sell ​​with bitcoin</p>
+<p>Ex., 
+November 2018, Total fees of DunkPay commission - 1,200 ETH
+On December 1, 2018, We will divide 1,200 DNK for each user (holdings / total issue volume) to Airdrop.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">dunkpay</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Dunkpay</span><span class="p">()</span>
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="s2">"BTC"</span>
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">address</span> <span class="o">=</span> <span class="s2">"1Lc1jhXdsB7t1XpTdNbrchnxKQide9tMia"</span>
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">amount</span> <span class="o">=</span> <span class="mf">0.001</span> 
+<p>5 DNK holder = (5/10000) * 1200 = Additional 0.6 DNK</p>
 
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">shot</span><span class="p">()</span>
-</code></pre></div></div>
-
-<h1 id="advance-usage">ADVANCE USAGE</h1>
-
-<p>For sell ​​in dollars</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">dunkpay</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Dunkpay</span><span class="p">()</span>
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="s2">"BCH"</span>
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">address</span> <span class="o">=</span> <span class="s2">"19zgnCTYzq1eww1JpGCi5ZSvFPiCC7fVHa"</span>
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">itemName</span> <span class="o">=</span> <span class="s2">"Bascketball🏀"</span>
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">currency</span> <span class="o">=</span> <span class="s2">"USD"</span> 
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">amount</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1">// 2dollars</span>
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">invoiceMail</span> <span class="o">=</span> <span class="s2">"dunkpay.com@gmail.com"</span>
-
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">shot</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">result</span><span class="p">){</span>
- <span class="k">if</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
- <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Something was wrong."</span> <span class="o">+</span> <span class="nx">err</span><span class="p">)</span>
- <span class="p">}</span> 
- <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Payment was success."</span> <span class="o">+</span> <span class="nx">result</span><span class="p">)</span>		
-<span class="p">})</span>
-</code></pre></div></div>
-
-<p>For sell with escrow</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">dunkpay</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Dunkpay</span><span class="p">()</span>
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="s2">"ETH"</span>
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">address</span> <span class="o">=</span> <span class="s2">"0x41C87EDB6AB6C719456EACC992F4C2FE278FF8D4"</span>
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">itemName</span> <span class="o">=</span> <span class="s2">"겔럭시9"</span>
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">amount</span> <span class="o">=</span> <span class="mi">10000</span> <span class="c1">// 10000원  </span>
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">currency</span> <span class="o">=</span> <span class="s2">"KRW"</span> 
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">escrow</span> <span class="o">=</span> <span class="kc">true</span>
-
-<span class="nx">dunkpay</span><span class="p">.</span><span class="nx">shot</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">result</span><span class="p">){</span>
- <span class="k">if</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
- <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Something was wrong."</span> <span class="o">+</span> <span class="nx">err</span><span class="p">)</span>
- <span class="p">}</span> 
- <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Payment was success."</span> <span class="o">+</span> <span class="nx">result</span><span class="p">)</span>			
-<span class="p">})</span>
-</code></pre></div></div>
-
-<h1 id="option">OPTION</h1>
-
-<p><strong>type (Required*)</strong></p>
-<ul>
-  <li><code class="highlighter-rouge">type</code> - The type of cryptocurrency. We support BTC/BCH/ETH.</li>
-</ul>
-
-<p><strong>address (Required*)</strong></p>
-<ul>
-  <li><code class="highlighter-rouge">address</code> - Owned by you. When the coin is deposited, it will be sent to this address.</li>
-</ul>
-
-<p><strong>amount (Required*)</strong></p>
-<ul>
-  <li><code class="highlighter-rouge">amount</code> - Price that you want to get. The default unit of amount is BTC/BCH/ETH.</li>
-</ul>
-
-<p><strong>currency</strong></p>
-<ul>
-  <li><code class="highlighter-rouge">currency</code> - The unit of currency that you want to sell price. <a href="https://blockchain.info/api/exchange_rates_api">For support currency see.</a></li>
-</ul>
-
-<p><strong>escrow</strong></p>
-<ul>
-  <li><code class="highlighter-rouge">escrow</code> - An option to enable your escrow payment. It completes when your buyer confirms a transaction.</li>
-</ul>
-
-<p><strong>escrowMail</strong></p>
-<ul>
-  <li><code class="highlighter-rouge">escrowMail</code> - escrowMail is the email address of the buyer in the escrow payment. If you do not enter this option, you will be prompted for your purchase.</li>
-</ul>
-
-<p><strong>itemName</strong></p>
-<ul>
-  <li><code class="highlighter-rouge">itemName</code> - It will be described on your product. It supports UTF-8 encoded character.</li>
-</ul>
-
-<p><strong>invoiceMail</strong></p>
-<ul>
-  <li><code class="highlighter-rouge">invoiceMail</code> - InvoiceMail will send it to you when your transaction is completed. If you cannot receive any mail , please check you spam mailbox.</li>
-</ul>
-
-<p><strong>redirectUrl</strong></p>
-<ul>
-  <li><code class="highlighter-rouge">redirectUrl</code> - It is url destination to move page when your transaction is completed.</li>
-</ul>
-
-<p><strong>notificationUrl</strong></p>
-<ul>
-  <li><code class="highlighter-rouge">notificationUrl</code> - It is place where your server can receive request when your transaction is completed. Whole query string will be return.</li>
-</ul>
-
-<p><strong>customLogo</strong></p>
-<ul>
-  <li><code class="highlighter-rouge">customLogo</code> - It is a customized logo. Allow external image URL.</li>
-</ul>
-
-<p><strong>customColor</strong></p>
-<ul>
-  <li><code class="highlighter-rouge">customColor</code> - It is a customized color for invoice design. Allow Hex color code.</li>
-</ul>
-
-<p><strong>customUrl</strong></p>
-<ul>
-  <li><code class="highlighter-rouge">customUrl</code> - It is the URL that will be moved when the logo is clicked.</li>
-</ul>
-
-<h1 id="testnet">TESTNET</h1>
-<p>Initialize <code class="highlighter-rouge">new dunkpay('testnet')</code> for testing.</p>
+<h1 id="dunkpay-token-units">DunkPay Token Units</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Cryptocurrency</th>
-      <th>Support</th>
+      <th>Unit</th>
+      <th>Value</th>
+      <th style="text-align: left">Jordan</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>BTC</td>
-      <td>TESTNET <a href="https://tbtc.blockdozer.com">(https://tbtc.blockdozer.com)</a></td>
+      <td>jordan (Jordan)</td>
+      <td>1 jordan</td>
+      <td style="text-align: left">1</td>
     </tr>
     <tr>
-      <td>BCH</td>
-      <td>TESTNET <a href="https://tbch.blockdozer.com">(https://tbch.blockdozer.com)</a></td>
+      <td>Kjordan (Magic)</td>
+      <td>1e3 jordan</td>
+      <td style="text-align: left">1,000</td>
     </tr>
     <tr>
-      <td>ETH</td>
-      <td>ROPSTEN <a href="https://ropsten.etherscan.io">(https://ropsten.etherscan.io)</a></td>
+      <td>Mjondan (Shaq)</td>
+      <td>1e6 jordan</td>
+      <td style="text-align: left">1,000,000</td>
+    </tr>
+    <tr>
+      <td>Gjordan (Kobe)</td>
+      <td>1e9 jordan</td>
+      <td style="text-align: left">1,000,000,000</td>
+    </tr>
+    <tr>
+      <td>microdunk (LeBron)</td>
+      <td>1e12 jordan</td>
+      <td style="text-align: left">1,000,000,000,000</td>
+    </tr>
+    <tr>
+      <td>millidunk (Stephan)</td>
+      <td>1e15 jordan</td>
+      <td style="text-align: left">1,000,000,000,000,000</td>
+    </tr>
+    <tr>
+      <td>dunk (DNK)</td>
+      <td>1e18 jordan</td>
+      <td style="text-align: left">1,000,000,000,000,000,000</td>
     </tr>
   </tbody>
 </table>
 
-<h1 id="testing">TESTING</h1>
-<p><a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/Dayyoung/dunkpay/master/docs/test.html">Click here for testing : /docs/test.html</a></p>
+<p>Apply the same units as ETH. 1 DNK can also be expressed as 1e18 jordan. Regretfully, Kobe and LeBron are not Jordan’s opponents.</p>
 
-<p><a href="mailto:dryudryu@gmail.com">Click here for contacting : dryudryu@gmail.com</a></p>
+<h1 id="dunkpay-token-buying-purchase">DunkPay Token Buying (Purchase)</h1>
+<p>When a customer deposits ETH into a smart contract address, the customer immediately receives the token with the same ETH address as the DunkPay token. Up to 50% bonus will apply depending on remaining sales volume.</p>
 
-<h1 id="license">LICENSE</h1>
-<p><a href="https://www.mozilla.org/MPL/2.0/">MPL-2.0</a></p>
+<p>1 ETH = 1 + 0.5 * (Sales Remaining Volume / Total Sales Volume) DNK</p>
+
+<p>Ex., In case of : 2,450 DNK  of 4,900 DNK was sold
+1 ETH = 1 + 0.5 * (2450/4900) = 1.25 DNK</p>
+
+<h1 id="dunkpay-token-selling-refund">DunkPay Token Selling (Refund)</h1>
+<p>Customers can sell DunkPay tokens by running the Refund to Smart Contract address. It is reverse buying calculation. (However, we will charge for 1% refund fee.)</p>
+
+<p>1 DNK = 1 - 0.5 * (Sales Remaining Volume / Total Sales Volume) ETH</p>
+
+<p>Ex., In case of : 2,450 DNK  of 4,900 DNK was sold
+1 DNK = 1 - 0.5 * (2450/4900) - = 0.75 ETH
+Refund fee = 0.0075 ETH</p>
+
+<h1 id="dunkpay-token-ending-bankruptcy">DunkPay Token Ending (bankruptcy)</h1>
+<p>DunkPay has an obligation to deposit the token refund reserve. However, if the reserve fund can not be provided due to the deterioration of management, the bankruptcy contract will be executed. The bankruptcy procedure is as follows. All tokens not sold will be burn in the first step. And we will divide remaining tokens for airdrop to token holders.</p>
+
+<h1 id="dunkpay-token-operation-plan">DunkPay Token Operation Plan</h1>
+<p>The operation plan is very transparent. If the DunkPay token sale is successful, the ETH will be enforced for the company’s development, with the exception of the refund reserve (10%). Expected execution portions are as follows.</p>
+
+<p><img src="assets/img/graph.png" alt="" height="70%" width="70%" /></p>
+
+<p>On the first day of each month, the contents of the execution are informed through the our site and subscribed email.</p>
+
+<h1 id="best-case-scenario">Best-case Scenario</h1>
+<p>If marketing costs exceed a certain level (1,000,000 USD), we will proceed with the NBA Dream Team Match in Las Vegas. Michael Jordan’s 1992 Dream Team and Shaquille O’Neill’s 1994 Dream Team match up. If you have more than a certain number of DunkPay tokens, you will have a free VOD and on-site viewing opportunity.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>Nowadays, there are tons of tokens are currently being sale that guarantee high returns. However, it is hard to find a token that can expect profit rate right now. We do not want to sell products that do not look like air or water to you. Participate Token Sale that can get revenue immediately. You are eligible to purchase the visible items!</p>
+
+<p><img src="assets/img/sign.png" alt="" height="20%" width="20%" /></p>
+
+<p>Sincerely yours,</p>
+
 
 
       <footer class="site-footer">
         
-          <span class="site-footer-owner"><a href="https://github.com/Dayyoung/dunkpay">dunkpay</a> is maintained by <a href="http://github.com/Dayyoung">Dayyoung</a>.</span>
+          <span class="site-footer-owner"><a href="http://github.com/Dayyoung/dunkpay">dunkpay</a> is maintained by <a href="http://github.com/Dayyoung">Dayyoung</a>.</span>
         
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
       </footer>

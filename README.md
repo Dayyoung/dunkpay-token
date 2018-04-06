@@ -1,129 +1,78 @@
-# DunkPay.com
+# DunkPay (ERC20) Token Sale
 
-DunkPay.com is the service for users who want to pay with cryptocurrency.
-Create a link, copy it and sell what you want.
-As soon as transaction is completed, confirmation process starts immediately
-Transactions are guaranteed by blockchain method.
+This white paper is related to selling DunkPay tokens. DunkPay is currently in service as a billing system with Cryptocurrency. DunkPay can currently make payments using BTC, BCH, ETH Cryptocurrency. If the user makes a payment through DunkPay, a 1% fee will be charged. We have decided to sell token the right to get this fee. DunkPay is a running  service. No specific sales terms or agreement. Refunds are also available at any time.
 
-"Play ball. Make your dream."
+# The rules are very simple.
+You can acquire a DunkPay token when you deposit to a smart contract address. DunkPay token users receive an additional token once a month. All functions such as purchases, refunds, bankruptcies, etc. operate as smart contracts.
 
-# INSTALLATION
-Include script on your site.
+# DunkPay Token (ERC20 - DNK)
+Total volume : 10,000 DNK
+Sales volume : 4,900 DNK (49%)
+Additional volume : Airdrop for token users.
 
-```javascript
-<script type="text/javascript" src="https://www.dunkpay.com/dunkpay.js"></script>
-```
+# DunkPay Token Airdrop
 
-# USAGE
+The rules are very simple. Take a snapshot on the first day of the month (GMT 00:00). You will receive a DunkPay token by Airdrop based on (holdings / total issue volume)
+(However, if there is no fee income, it may carry forward.)
 
-For sell ​​with bitcoin
+Ex., 
+November 2018, Total fees of DunkPay commission - 1,200 ETH
+On December 1, 2018, We will divide 1,200 DNK for each user (holdings / total issue volume) to Airdrop.
 
-```javascript
-var dunkpay = new Dunkpay()
-dunkpay.type = "BTC"
-dunkpay.address = "1Lc1jhXdsB7t1XpTdNbrchnxKQide9tMia"
-dunkpay.amount = 0.001 
+5 DNK holder = (5/10000) * 1200 = Additional 0.6 DNK
 
-dunkpay.shot()
-```
+# DunkPay Token Units 
 
-# ADVANCE USAGE
+Unit|Value|Jordan
+ ------------- |-------------|:-----
+ jordan (Jordan)     | 1 jordan | 1 
+ Kjordan (Magic)     | 1e3 jordan | 1,000 
+ Mjondan (Shaq)     | 1e6 jordan | 1,000,000 
+ Gjordan (Kobe)     | 1e9 jordan | 1,000,000,000 
+ microdunk (LeBron)     | 1e12 jordan | 1,000,000,000,000 
+ millidunk (Stephan)    | 1e15 jordan | 1,000,000,000,000,000 
+ dunk (DNK)     | 1e18 jordan | 1,000,000,000,000,000,000 
 
-For sell ​​in dollars
+Apply the same units as ETH. 1 DNK can also be expressed as 1e18 jordan. Regretfully, Kobe and LeBron are not Jordan's opponents.
 
-```javascript
-var dunkpay = new Dunkpay()
-dunkpay.type = "BCH"
-dunkpay.address = "19zgnCTYzq1eww1JpGCi5ZSvFPiCC7fVHa"
-dunkpay.itemName = "Bascketball🏀"
-dunkpay.currency = "USD" 
-dunkpay.amount = 2 // 2dollars
-dunkpay.invoiceMail = "dunkpay.com@gmail.com"
+# DunkPay Token Buying (Purchase)
+When a customer deposits ETH into a smart contract address, the customer immediately receives the token with the same ETH address as the DunkPay token. Up to 50% bonus will apply depending on remaining sales volume.
 
-dunkpay.shot(function(err,result){
- if(err)
- {
-  console.log("Something was wrong." + err)
- } 
- console.log("Payment was success." + result)		
-})
-```
+1 ETH = 1 + 0.5 * (Sales Remaining Volume / Total Sales Volume) DNK
 
-For sell with escrow
+Ex., In case of : 2,450 DNK  of 4,900 DNK was sold
+1 ETH = 1 + 0.5 * (2450/4900) = 1.25 DNK
 
-```javascript
-var dunkpay = new Dunkpay()
-dunkpay.type = "ETH"
-dunkpay.address = "0x41C87EDB6AB6C719456EACC992F4C2FE278FF8D4"
-dunkpay.itemName = "겔럭시9"
-dunkpay.amount = 10000 // 10000원  
-dunkpay.currency = "KRW" 
-dunkpay.escrow = true
+# DunkPay Token Selling (Refund)
+Customers can sell DunkPay tokens by running the Refund to Smart Contract address. It is reverse buying calculation. (However, we will charge for 1% refund fee.)
 
-dunkpay.shot(function(err,result){
- if(err)
- {
-  console.log("Something was wrong." + err)
- } 
- console.log("Payment was success." + result)			
-})
-```
+1 DNK = 1 - 0.5 * (Sales Remaining Volume / Total Sales Volume) ETH
 
-# OPTION
+Ex., In case of : 2,450 DNK  of 4,900 DNK was sold
+1 DNK = 1 - 0.5 * (2450/4900) - = 0.75 ETH
+Refund fee = 0.0075 ETH
 
-**type (Required*)**
-- `type` - The type of cryptocurrency. We support BTC/BCH/ETH. 
+# DunkPay Token Ending (bankruptcy)
+DunkPay has an obligation to deposit the token refund reserve. However, if the reserve fund can not be provided due to the deterioration of management, the bankruptcy contract will be executed. The bankruptcy procedure is as follows. All tokens not sold will be burn in the first step. And we will divide remaining tokens for airdrop to token holders.
 
-**address (Required*)**
-- `address` - Owned by you. When the coin is deposited, it will be sent to this address. 
+# DunkPay Token Operation Plan
+The operation plan is very transparent. If the DunkPay token sale is successful, the ETH will be enforced for the company's development, with the exception of the refund reserve (10%). Expected execution portions are as follows.
 
-**amount (Required*)**
-- `amount` - Price that you want to get. The default unit of amount is BTC/BCH/ETH. 
+![](assets/img/graph.png){:height="70%" width="70%"}
 
-**currency**
-- `currency` - The unit of currency that you want to sell price. [For support currency see.](https://blockchain.info/api/exchange_rates_api)
+On the first day of each month, the contents of the execution are informed through the our site and subscribed email.
 
-**escrow**
-- `escrow` - An option to enable your escrow payment. It completes when your buyer confirms a transaction. 
+# Best-case Scenario
+If marketing costs exceed a certain level (1,000,000 USD), we will proceed with the NBA Dream Team Match in Las Vegas. Michael Jordan's 1992 Dream Team and Shaquille O'Neill's 1994 Dream Team match up. If you have more than a certain number of DunkPay tokens, you will have a free VOD and on-site viewing opportunity.
 
-**escrowMail**
-- `escrowMail` - escrowMail is the email address of the buyer in the escrow payment. If you do not enter this option, you will be prompted for your purchase. 
-
-**itemName**
-- `itemName` - It will be described on your product. It supports UTF-8 encoded character.
-
-**invoiceMail**
-- `invoiceMail` - InvoiceMail will send it to you when your transaction is completed. If you cannot receive any mail , please check you spam mailbox. 
-
-**redirectUrl**
-- `redirectUrl` - It is url destination to move page when your transaction is completed. 
-
-**notificationUrl**
-- `notificationUrl` - It is place where your server can receive request when your transaction is completed. Whole query string will be return. 
-
-**customLogo**
-- `customLogo` - It is a customized logo. Allow external image URL. 
-
-**customColor**
-- `customColor` - It is a customized color for invoice design. Allow Hex color code. 
-
-**customUrl**
-- `customUrl` - It is the URL that will be moved when the logo is clicked. 
+# Conclusion
+Nowadays, there are tons of tokens are currently being sale that guarantee high returns. However, it is hard to find a token that can expect profit rate right now. We do not want to sell products that do not look like air or water to you. Participate Token Sale that can get revenue immediately. You are eligible to purchase the visible items! 
 
 
-# TESTNET
-Initialize `new dunkpay('testnet')` for testing.
 
-Cryptocurrency | Support 
------------- | -------------
-BTC | TESTNET [(https://tbtc.blockdozer.com)](https://tbtc.blockdozer.com)
-BCH | TESTNET [(https://tbch.blockdozer.com)](https://tbch.blockdozer.com)
-ETH | ROPSTEN [(https://ropsten.etherscan.io)](https://ropsten.etherscan.io)
+![](assets/img/sign.png){:height="20%" width="20%"}
 
-# TESTING
- [Click here for testing : /docs/test.html](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Dayyoung/dunkpay/master/docs/test.html)
 
- [Click here for contacting : dryudryu@gmail.com](mailto:dryudryu@gmail.com)
 
-# LICENSE
-[MPL-2.0](https://www.mozilla.org/MPL/2.0/)
+Sincerely yours,
+
