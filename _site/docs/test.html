@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DunkPay.com</title>
+
+	<script type="text/javascript" src="https://www.dunkpay.com/dunkpay.js"></script>
+
+	<script type="text/javascript">
+		
+		function sell(mode) {
+			var dunkpay = new Dunkpay(mode)
+			dunkpay.type = "BTC"
+			dunkpay.address = "1Lc1jhXdsB7t1XpTdNbrchnxKQide9tMia"
+			dunkpay.amount = 0.001 
+
+			dunkpay.shot(function(err,result){
+				 if(err)
+				 {
+				  console.log("Something was wrong." + err)
+				 } 
+				 console.log("Payment was success." + result.transactionId)				
+			})
+		}
+
+		function sellInDollars(mode) {
+			var dunkpay = new Dunkpay(mode)
+			dunkpay.type = "BCH"
+			dunkpay.address = "19zgnCTYzq1eww1JpGCi5ZSvFPiCC7fVHa"
+			dunkpay.itemName = "Bascketball🏀"
+			dunkpay.currency = "USD" 
+			dunkpay.amount = 2 // 2dollars
+			dunkpay.invoiceMail = "dunkpay.com@gmail.com"
+
+			dunkpay.shot(function(err,result){
+				 if(err)
+				 {
+				  console.log("Something was wrong." + err)
+				 } 
+				 console.log("Payment was success." + result.transactionId)				
+			})
+		}
+
+		function sellWithEscrow(mode) {
+			var dunkpay = new Dunkpay(mode)
+			dunkpay.type = "ETH"
+			dunkpay.address = "0x41C87EDB6AB6C719456EACC992F4C2FE278FF8D4"
+			dunkpay.amount = 10000  
+			dunkpay.currency = "KRW" 
+			dunkpay.escrow = true
+
+			dunkpay.shot(function(err,result){
+				 if(err)
+				 {
+				  console.log("Something was wrong." + err)
+				 } 
+				 console.log("Payment was success." + result.transactionId)
+			})
+		}
+
+	</script>
+</head>
+
+<style type="text/css">
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin : 5px;
+    width : 300px;
+}	
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+</style>
+
+<body>
+	<br>
+	<h3>DunkPay.com - Click the button for testing.</h3>
+	<h3>For Livenet</h3>
+	<br> Basic selling : <br>
+	<button class="button button1" onclick="sell()">Bitcoin</button>
+	<br> Selling with Dollars : <br> 
+	<button class="button button2" onclick="sellInDollars()">Bitcoin cash</button>
+	<br> Selling with escrow : <br>
+	<button class="button button3" onclick="sellWithEscrow()">Ethereum</button>
+
+	<br>
+	<br>
+	<h3>For Testnet</h3>
+	<br> Basic selling : <br>
+	<button class="button button1" onclick="sell('testnet')">Bitcoin</button>
+	<br> Selling with Dollars : <br>
+	<button class="button button2" onclick="sellInDollars('testnet')">Bitcoin cash</button>
+	<br> Selling with escrow : <br>
+	<button class="button button3" onclick="sellWithEscrow('testnet')">Ethereum</button>
+
+</body>
+
+</html>
