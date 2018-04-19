@@ -2,25 +2,27 @@
 
 This white paper is related to selling DunkPay tokens. DunkPay is currently in service as a billing system with Cryptocurrency. DunkPay can currently make payments using BTC, BCH, ETH Cryptocurrency. If the user makes a payment through DunkPay, a 1% fee will be charged. We have decided to sell token the right to get this fee. DunkPay is a running  service. No specific sales terms or agreement. Refunds are also available at any time.
 
-# The rules are very simple.
-You can acquire a DunkPay token when you deposit to a smart contract address. DunkPay token users receive an additional token once a month. All functions such as purchases, refunds, bankruptcies, etc. operate as smart contracts.
+# Send ETH for buying , Send DNK for refunds.
+
+Buying or selling DunkPay tokens does not require cryptocurrency exchanges. You can get DNK when you deposit ETH to a smart contract address. Or you can refund when you deposit the DNK. All functions such as purchases, refunds, bankruptcies, etc. operate as smart contracts.
 
 # DunkPay Token (ERC20 - DNK)
+```javascript
 Total volume : 10,000 DNK
 Sales volume : 4,900 DNK (49%)
 Additional volume : Airdrop for token users.
-
+```
 # DunkPay Token Airdrop
 
 The rules are very simple. Take a snapshot on the first day of the month (GMT 00:00). You will receive a DunkPay token by Airdrop based on (holdings / total issue volume)
 (However, if there is no fee income, it may carry forward.)
-
+```javascript
 Ex., 
-November 2018, Total fees of DunkPay commission - 1,200 ETH
-On December 1, 2018, We will divide 1,200 DNK for each user (holdings / total issue volume) to Airdrop.
+Nov 2018, Total fees of DunkPay commission - 1,200 ETH * 1000
+On Dec 1, 2018, We will divide 1,200,000 DNK for each user (holdings / total issue volume) to Airdrop.
 
-5 DNK holder = (5/10000) * 1200 = Additional 0.6 DNK
-
+5,000 DNK holder = (5000/10000000) * 1200000 = Additional 600 DNK
+```
 # DunkPay Token Units 
 
 Unit|Value|Jordan
@@ -36,43 +38,46 @@ Unit|Value|Jordan
 Apply the same units as ETH. 1 DNK can also be expressed as 1e18 jordan. Regretfully, Kobe and LeBron are not Jordan's opponents.
 
 # DunkPay Token Buying (Purchase)
+
 When a customer deposits ETH into a smart contract address, the customer immediately receives the token with the same ETH address as the DunkPay token. Up to 50% bonus will apply depending on remaining sales volume.
+```javascript
+1 ETH = (1 + 0.5 * (Sales Remaining Volume / Total Sales Volume)) * 1000 DNK
 
-1 ETH = 1 + 0.5 * (Sales Remaining Volume / Total Sales Volume) DNK
-
-Ex., In case of : 2,450 DNK  of 4,900 DNK was sold
-1 ETH = 1 + 0.5 * (2450/4900) = 1.25 DNK
-
+Ex., In case of : 2,450,000 DNK  of 4,900,000 DNK was sold
+1 ETH = 1.25 * 1000 = 1,250 DNK
+```
 # DunkPay Token Selling (Refund)
+
 Customers can sell DunkPay tokens by running the Refund to Smart Contract address. It is reverse buying calculation. (However, we will charge for 1% refund fee.)
+```javascript
+1 DNK = (1 - 0.5 * (Sales Remaining Volume / Total Sales Volume)) / 1000 ETH
 
-1 DNK = 1 - 0.5 * (Sales Remaining Volume / Total Sales Volume) ETH
-
-Ex., In case of : 2,450 DNK  of 4,900 DNK was sold
-1 DNK = 1 - 0.5 * (2450/4900) - = 0.75 ETH
-Refund fee = 0.0075 ETH
-
+Ex., In case of : 2,450,000 DNK  of 4,900,000 DNK was sold
+1 DNK = 0.75 / 1000 = 0.00075 ETH
+Refund fee = 0.0000075 ETH
+```
 # DunkPay Token Ending (bankruptcy)
+
 DunkPay has an obligation to deposit the token refund reserve. However, if the reserve fund can not be provided due to the deterioration of management, the bankruptcy contract will be executed. The bankruptcy procedure is as follows. All tokens not sold will be burn in the first step. And we will divide remaining tokens for airdrop to token holders.
 
 # DunkPay Token Operation Plan
+
 The operation plan is very transparent. If the DunkPay token sale is successful, the ETH will be enforced for the company's development, with the exception of the refund reserve (10%). Expected execution portions are as follows.
 
-![](assets/img/graph.png){:height="70%" width="70%"}
+<p align="center">
+	<img width="70%" height="70%" src="assets/img/graph.png">
+</p>
 
 On the first day of each month, the contents of the execution are informed through the our site and subscribed email.
 
 # Best-case Scenario
+
 If marketing costs exceed a certain level (1,000,000 USD), we will proceed with the NBA Dream Team Match in Las Vegas. Michael Jordan's 1992 Dream Team and Shaquille O'Neill's 1994 Dream Team match up. If you have more than a certain number of DunkPay tokens, you will have a free VOD and on-site viewing opportunity.
 
 # Conclusion
+
 Nowadays, there are tons of tokens are currently being sale that guarantee high returns. However, it is hard to find a token that can expect profit rate right now. We do not want to sell products that do not look like air or water to you. Participate Token Sale that can get revenue immediately. You are eligible to purchase the visible items! 
-
-
-
-![](assets/img/sign.png){:height="20%" width="20%"}
-
-
 
 Sincerely yours,
 
+<img align="right" width="20%" height="20%" src="assets/img/sign.png">
