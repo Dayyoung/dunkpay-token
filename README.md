@@ -1,4 +1,4 @@
-# DunkPay (ERC20) Token Sale
+# Dear friends,
 
 This white paper is related to selling DunkPay tokens. DunkPay is currently in service as a billing system with Cryptocurrency. DunkPay can currently make payments using BTC, BCH, ETH Cryptocurrency. If the user makes a payment through DunkPay, a 1% fee will be charged. We have decided to sell token the right to get this fee. DunkPay is a running  service. No specific sales terms or agreement. Refunds are also available at any time.
 
@@ -12,7 +12,7 @@ Total volume : 10,000 DNK
 Sales volume : 4,900 DNK (49%)
 Additional volume : Airdrop for token users.
 ```
-# DunkPay Token Airdrop
+# DunkPay Token PoS (Proof-of-Stake)
 
 The rules are very simple. Take a snapshot on the first day of the month (GMT 00:00). You will receive a DunkPay token by Airdrop based on (holdings / total issue volume)
 (However, if there is no fee income, it may carry forward.)
