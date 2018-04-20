@@ -1,3 +1,8 @@
+---
+layout: index_ko
+
+---
+
 # 친애하는 여러분,
 
 이 문서는 DunkPay 토큰 판매에 관련한 글 입니다. DunkPay는 암호화폐를 이용한 결제시스템 으로써 현재 서비스 중에 있습니다. DunkPay는 현재 BTC, BCH, ETH 암호화폐를  이용하여 결제할 수 있습니다. 사용자가 DunkPay를 통하여 결제를 하게 되면 1%의 수수료를 부과 합니다. 우리는 이 수수료를 얻을 권리를 토큰으로 판매하기로 결정 하였습니다. DunkPay는 운영 중인 서비스 입니다. 특정한 판매기간 이나 제약사항을 걸지 않습니다. 언제든지 환불도 가능합니다.
@@ -6,9 +11,8 @@
 
 DunkPay 토큰을 구매 또는 판매 하는 것은 별도의 거래소가 필요 없습니다. 사용자가 스마트컨트랙트 주소로 ETH를 입금하면 DunkPay 토큰을 획득 할 수 있고, DNK를 입금하면 ETH를 환불 받을 수 있습니다. 구매, 환불, 파산 등 모든 기능은 스마트컨트랙트로 작동합니다.
 
-```
-스마트 컨트랙트 : https://ropsten.etherscan.io/token/0x2e1f51019c867d9c4c7553cf707b2612e1e1889e
-```
+[스마트 컨트랙트 주소 : 0x2e1f51019c867d9c4c7553cf707b2612e1e1889e](https://ropsten.etherscan.io/token/0x2e1f51019c867d9c4c7553cf707b2612e1e1889e)
+
 <p align="center">
 	<img width="80%" height="80%" src="assets/img/smart-contract.png">
 </p>

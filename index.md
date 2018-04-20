@@ -6,7 +6,7 @@ This white paper is related to selling DunkPay tokens. DunkPay is currently in s
 
 Buying or selling DunkPay tokens does not require cryptocurrency exchanges. You can get DNK when you deposit ETH to a smart contract address. Or you can refund when you deposit the DNK. All functions such as purchases, refunds, bankruptcies, etc. operate as smart contracts.
 
-[Smart Contract : 0x2e1f51019c867d9c4c7553cf707b2612e1e1889e](https://ropsten.etherscan.io/token/0x2e1f51019c867d9c4c7553cf707b2612e1e1889e)
+[Smart Contract Address : 0x2e1f51019c867d9c4c7553cf707b2612e1e1889e](https://ropsten.etherscan.io/token/0x2e1f51019c867d9c4c7553cf707b2612e1e1889e)
 
 <p align="center">
 	<img width="80%" height="80%" src="assets/img/smart-contract.png">
