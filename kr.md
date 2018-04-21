@@ -11,10 +11,10 @@ layout: kr
 
 DunkPay 토큰을 구매 또는 판매 하는 것은 별도의 거래소가 필요 없습니다. 사용자가 스마트컨트랙트 주소로 ETH를 입금하면 DunkPay 토큰을 획득 할 수 있고, DNK를 입금하면 ETH를 환불 받을 수 있습니다. 구매, 환불, 파산 등 모든 기능은 스마트컨트랙트로 작동합니다.
 
-[스마트 컨트랙트 주소 : 0x2e1f51019c867d9c4c7553cf707b2612e1e1889e](https://ropsten.etherscan.io/token/0x2e1f51019c867d9c4c7553cf707b2612e1e1889e)
+[스마트 컨트랙트 주소 : 0x946863a91e9A67bb5C11FC42D0998baeBfa2727f](https://etherscan.io/address/0x946863a91e9A67bb5C11FC42D0998baeBfa2727f)
 
 <p align="center">
-	<img width="80%" height="80%" src="assets/img/smart-contract.png">
+	<img width="60%" height="60%" src="assets/img/smartContract.png">
 </p>
 # DunkPay 토큰 (ERC20 - DNK)
 ```
@@ -89,5 +89,5 @@ DunkPay는 토큰의 환불준비금을 예치해야 할 의무를 가집니다.
 현재 고수익을 보장하는 미래지향적인 토큰들이 판매되고 있습니다. 하지만, 당장 수익율을 기대할 수 있는 토큰은 찾아보기 힘든 것이 사실입니다. 우리는 여러분에게 공기 나 물처럼 보이지 않는 상품을 판매하지 않습니다. 당장 수익을 창출할 수 있는 토큰판매에 참여해 보세요. 당신은 보여지는 상품을 구매할 자격이 있습니다!
 
 Sincerely yours,
-
-<img align="right" width="30%" height="30%" src="assets/img/sign.png">
+<img align="right" width="20%" height="20%" src="assets/img/sign.png">
+<br><br><br>s
