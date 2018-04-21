@@ -1,5 +1,5 @@
 ---
-layout: index_ko
+layout: kr
 
 ---
 
