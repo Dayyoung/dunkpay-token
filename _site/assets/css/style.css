@@ -319,8 +319,14 @@ a:hover { text-decoration: underline; }
 
 .page-header { background-position: center center; left: 0; right: 0; }
 
-.project-name { margin: 0 auto; background-size: 100%; background-repeat: no-repeat; }
+.project-name { margin: 0 auto; background-size: 100%; background-repeat: no-repeat; color: rgba(255, 255, 255, 0.9); }
 
-.project-tagline { opacity: 1; }
+.project-tagline { color: rgba(255, 255, 255, 0.9); }
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 { margin-top: 2rem; margin-bottom: 1rem; font-weight: normal; color: #222; }
+
+#myProgress { border-radius: 25px; border: 2px solid rgba(255, 255, 255, 0.9); margin: 0 auto; width: 100%; max-width: 550px; background-color: rgba(255, 255, 255, 0.9); }
+
+#myBar { border-radius: 25px; width: 0%; height: 30px; background: linear-gradient(120deg, #155799, #159957); text-align: center; line-height: 30px; color: white; }
+
+#myGoal { margin: 10px; height: 30px; text-align: center; line-height: 30px; color: rgba(255, 255, 255, 0.9); }

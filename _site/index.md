@@ -14,8 +14,8 @@ Buying or selling DunkPay tokens does not require cryptocurrency exchanges. You 
 
 # DunkPay Token (ERC20 - DNK)
 ```
-Total volume : 10,000 DNK
-Sales volume : 4,900 DNK (49%)
+Total volume : 10,000,000 DNK
+Sales volume : 4,900,000 DNK (49%)
 Additional volume : Airdrop for token users.
 ```
 # DunkPay Token PoS (Proof-of-Stake)
