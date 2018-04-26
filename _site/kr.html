@@ -19,7 +19,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#1e130c">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/assets/css/style.css?v=88a4e785da60ee94ac038ceeba3673e4f906d112">
+    <link rel="stylesheet" href="/assets/css/style.css?v=701cb263417b34b96673209f76a26660d7f3efd7">
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
   </head>
   <body>
     <section class="page-header">
@@ -104,11 +105,11 @@ function numberWithCommas(x) {
 
 <p>DunkPay 토큰을 구매 또는 판매 하는 것은 별도의 거래소가 필요 없습니다. 사용자가 스마트컨트랙트 주소로 ETH를 입금하면 DunkPay 토큰을 획득 할 수 있고, DNK를 입금하면 ETH를 환불 받을 수 있습니다. 구매, 환불, 파산 등 모든 기능은 스마트컨트랙트로 작동합니다.</p>
 
-<p><a href="https://etherscan.io/address/0x946863a91e9A67bb5C11FC42D0998baeBfa2727f">스마트 컨트랙트 주소 : 0x946863a91e9A67bb5C11FC42D0998baeBfa2727f</a></p>
-
 <p align="center">
+	<a href="https://etherscan.io/address/0x7b606Bc8ce7ba370b14BF5b43D1987Cbaadc8d6d">0x7b606Bc8ce7ba370b14BF5b43D1987Cbaadc8d6d</a>
 	<img width="60%" height="60%" src="assets/img/smartContract.png" />
 </p>
+
 <h1 id="dunkpay-토큰-erc20---dnk">DunkPay 토큰 (ERC20 - DNK)</h1>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>전체 발행량 : 10,000,000 DNK
 판매 발행량 : 4,900,000 DNK (49%)
@@ -116,10 +117,9 @@ function numberWithCommas(x) {
 </code></pre></div></div>
 <h1 id="dunkpay-토큰-pos-proof-of-stake">DunkPay 토큰 PoS (Proof-of-Stake)</h1>
 
-<p>룰은 매우 간단합니다. 매월 1일 (GMT 00:00 기준) 스냅샷을 진행합니다. 보유량/총발행량 을 기준으로 DunkPay 토큰 을 받게 됩니다.
-(단 , 수수료 수입이 발생하지 않으면 이월될 수 있습니다.)</p>
+<p>룰은 매우 간단합니다. 매월 1일 (GMT 00:00 기준) 스냅샷을 진행합니다. 보유량/총발행량 을 기준으로 DunkPay 토큰 을 받게 됩니다. PoS를 위해서는 1,000 DNK 이상을 보유해야 합니다. (단 , 수수료 수입이 발생하지 않으면 이월될 수 있습니다.)</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>예 - 2018년 11월, DunkPay 수수료 총 매출 - 1,200 ETH * 1000 
-2018년 12월 1일, 각 사용자에게 (보유량/총발행량) * 1,200,000 DNK 를 받게됩니다.
+2018년 12월 1일, 각 사용자에게 (보유량/총 발행량) * 1,200,000 DNK 를 받게됩니다.
 
 5,000 DNK 보유자 = (5000/10000000) * 1200000 = 600 DNK 드랍
 </code></pre></div></div>
@@ -177,18 +177,18 @@ function numberWithCommas(x) {
 <h1 id="dunkpay-토큰-계약-구매">DunkPay 토큰 계약 (구매)</h1>
 
 <p>고객은 스마트컨트랙트 주소로 ETH를 입금하면 즉시 DunkPay 토큰을 동일한 ETH주소로 토큰을 받습니다. 잔여 판매수량에 따라 최대 50%의 보너스를 적용받습니다.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 ETH = (1 + 0.5 * (판매 잔여수량/판매수량) ) * 1000 DNK
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 ETH = (1 + 0.5 * (판매 잔여수량/총 발행량)) * 1000 DNK
 
-예 - 총 4,900,000 DNK에 2,450,000 DNK가 판매된 상황
+예 - 총 10,000,000 DNK에 2,450,000 DNK가 판매된 상황
 1 ETH = (1 + 0.25) * 1000 = 1,250 DNK
 </code></pre></div></div>
 <h1 id="dunkpay-토큰-환불-판매">DunkPay 토큰 환불 (판매)</h1>
 
 <p>고객은 스마트컨트랙트 주소로 DNK를 입금하면 즉시 ETH주소로 ETH를 환불 받습니다. 구매와 반대의 계산공식이 적용됩니다.
 (단, 환불수수료 1%를 차감합니다.)</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 DNK = (1 - 0.5 * (판매 잔여수량/판매수량)) / 1000 ETH
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 DNK = (1 - 0.5 * (판매 잔여수량/총 발행량)) / 1000 ETH
 
-예 - 총 4,900,000 DNK에 2,450,000 DNK가 판매된 상황
+예 - 총 10,000,000 DNK에 2,450,000 DNK가 판매된 상황
 1 DNK = (1 - 0.25) / 1000 = 0.00075 ETH
 환불수수료 = 0.0000075 ETH
 </code></pre></div></div>
@@ -214,8 +214,7 @@ function numberWithCommas(x) {
 
 <p>현재 고수익을 보장하는 미래지향적인 토큰들이 판매되고 있습니다. 하지만, 당장 수익율을 기대할 수 있는 토큰은 찾아보기 힘든 것이 사실입니다. 우리는 여러분에게 공기 나 물처럼 보이지 않는 상품을 판매하지 않습니다. 당장 수익을 창출할 수 있는 토큰판매에 참여해 보세요. 당신은 보여지는 상품을 구매할 자격이 있습니다!</p>
 
-<p>Sincerely yours,
-<img align="right" width="20%" height="20%" src="assets/img/sign.png" />
+<p><img align="right" width="20%" height="20%" src="assets/img/sign.png" />
 <br /><br /><br /></p>
 
 

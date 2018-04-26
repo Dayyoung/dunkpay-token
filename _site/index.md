@@ -6,26 +6,25 @@ This white paper is related to selling DunkPay tokens. DunkPay is currently in s
 
 Buying or selling DunkPay tokens does not require cryptocurrency exchanges. You can get DNK when you deposit ETH to a smart contract address. Or you can refund when you deposit the DNK. All functions such as purchases, refunds, bankruptcies, etc. operate as smart contracts.
 
-[Smart Contract Address : 0x946863a91e9A67bb5C11FC42D0998baeBfa2727f](https://etherscan.io/address/0x946863a91e9A67bb5C11FC42D0998baeBfa2727f)
-
 <p align="center">
+	<a href="https://etherscan.io/address/0x7b606Bc8ce7ba370b14BF5b43D1987Cbaadc8d6d">0x7b606Bc8ce7ba370b14BF5b43D1987Cbaadc8d6d</a>
 	<img width="60%" height="60%" src="assets/img/smartContract.png">
 </p>
 
 # DunkPay Token (ERC20 - DNK)
 ```
-Total volume : 10,000,000 DNK
-Sales volume : 4,900,000 DNK (49%)
-Additional volume : Airdrop for token users.
+Total volume : 10,000 DNK
+Sales volume : 4,900 DNK (49%)
+Additional volume : PoS for token users.
 ```
 # DunkPay Token PoS (Proof-of-Stake)
 
-The rules are very simple. Take a snapshot on the first day of the month (GMT 00:00). You will receive a DunkPay token by Airdrop based on (holdings / total issue volume)
+The rules are very simple. Take a snapshot on the first day of the month (GMT 00:00). You will receive a DunkPay token by PoS based on (holdings / total issue volume).  For PoS, you should have more than 1,000 DNK.
 (However, if there is no fee income, it may carry forward.)
 ```
 Ex., 
 Nov 2018, Total fees of DunkPay commission - 1,200 ETH * 1000
-On Dec 1, 2018, We will divide 1,200,000 DNK for each user (holdings / total issue volume) to Airdrop.
+On Dec 1, 2018, We will divide 1,200,000 DNK for each user (Holdings / Total Issue Volume) to PoS.
 
 5,000 DNK holder = (5000/10000000) * 1200000 = Additional 600 DNK
 ```
@@ -47,18 +46,18 @@ Apply the same units as ETH. 1 DNK can also be expressed as 1e18 jordan. Regretf
 
 When a customer deposits ETH into a smart contract address, the customer immediately receives the token with the same ETH address as the DunkPay token. Up to 50% bonus will apply depending on remaining sales volume.
 ```
-1 ETH = (1 + 0.5 * (Sales Remaining Volume / Total Sales Volume)) * 1000 DNK
+1 ETH = (1 + 0.5 * (Sales Remaining Volume / Total Issue Volume)) * 1000 DNK
 
-Ex., In case of : 2,450,000 DNK  of 4,900,000 DNK was sold
+Ex., In case of : 2,450,000 DNK  of 10,000,000 DNK was sold
 1 ETH = 1.25 * 1000 = 1,250 DNK
 ```
 # DunkPay Token Selling (Refund)
 
 Customers can sell DunkPay tokens by running the Refund to Smart Contract address. It is reverse buying calculation. (However, we will charge for 1% refund fee.)
 ```
-1 DNK = (1 - 0.5 * (Sales Remaining Volume / Total Sales Volume)) / 1000 ETH
+1 DNK = (1 - 0.5 * (Sales Remaining Volume / Total Issue Volume)) / 1000 ETH
 
-Ex., In case of : 2,450,000 DNK  of 4,900,000 DNK was sold
+Ex., In case of : 2,450,000 DNK  of 10,000,000 DNK was sold
 1 DNK = 0.75 / 1000 = 0.00075 ETH
 Refund fee = 0.0000075 ETH
 ```
