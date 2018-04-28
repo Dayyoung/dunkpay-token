@@ -61,8 +61,8 @@ function move(successData) {
       clearInterval(id);
       //myGoal.innerHTML =  numberWithCommas(parseInt(totalSupply-contractSupply)) + " DNK / " + numberWithCommas(parseInt(totalSupply)) +" DNK";
 
-      myRate.innerHTML = ' Buying : ≈ ' + numberWithCommas(parseInt(successData.buyRate)) + ' DNK / ETH';
-      myRate.innerHTML += '<br> Refund : ≈ ' + numberWithCommas(parseInt(successData.sellRate)) + ' DNK / ETH';
+      myRate.innerHTML = ' Buying ≈ ' + numberWithCommas(parseInt(successData.buyRate)) + ' DNK / ETH';
+      myRate.innerHTML += '<br> Refund ≈ ' + numberWithCommas(parseInt(successData.sellRate)) + ' DNK / ETH';
       
     } else {
       width++; 
