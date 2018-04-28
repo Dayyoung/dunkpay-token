@@ -329,4 +329,6 @@ a:hover { text-decoration: underline; }
 
 #myBar { border-radius: 25px; width: 0%; height: 30px; background: linear-gradient(120deg, #155799, #159957); text-align: center; line-height: 30px; color: white; }
 
-#myGoal { margin: 10px; height: 30px; text-align: center; line-height: 30px; color: rgba(255, 255, 255, 0.9); }
+#myRate { font-size: 14px; margin: 20px; text-align: center; color: rgba(255, 255, 255, 0.9); }
+
+#myGoal { font-size: 10px; margin: 5px; text-align: center; color: rgba(255, 255, 255, 0.9); }

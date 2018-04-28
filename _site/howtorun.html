@@ -20,7 +20,7 @@
     <meta name="theme-color" content="#1e130c">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/assets/css/style.css?v=4b408a8288c31b0b9c75f992f4dbb875c249d111">
-    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
   <body>
     <section class="page-header">
@@ -32,38 +32,37 @@
 
 
 <script type="text/javascript">
-var abi = [{"constant":false,"inputs":[{"name":"numerator","type":"uint256"},{"name":"denominator","type":"uint256"},{"name":"precision","type":"uint256"}],"name":"percent","outputs":[{"name":"quotient","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_spender","type":"address"},{"name":"_value","type":"uint256"}],"name":"approve","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transferFrom","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"}],"name":"withdraw","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"totalEth","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"unpause","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_value","type":"uint256"}],"name":"burn","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"sellPrice","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_holders","type":"address[]"}],"name":"bankrupt","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"paused","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balanceOf","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"target","type":"address"},{"name":"mintedAmount","type":"uint256"}],"name":"mintToken","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_value","type":"uint256"}],"name":"burnFrom","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"number","type":"uint256"}],"name":"getZero","outputs":[{"name":"num_len","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"pause","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"buyPrice","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"buy","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"newSellPrice","type":"uint256"},{"name":"newBuyPrice","type":"uint256"},{"name":"newBuySupply","type":"uint256"}],"name":"setPrices","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transfer","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"frozenAccount","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"buySupply","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_holders","type":"address[]"},{"name":"mintedAmount","type":"uint256"}],"name":"airdrop","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_spender","type":"address"},{"name":"_value","type":"uint256"},{"name":"_extraData","type":"bytes"}],"name":"approveAndCall","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"},{"name":"","type":"address"}],"name":"allowance","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"}],"name":"sell","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"target","type":"address"},{"name":"freeze","type":"bool"}],"name":"freezeAccount","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[{"indexed":false,"name":"target","type":"address"},{"indexed":false,"name":"frozen","type":"bool"}],"name":"FrozenFunds","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"address"},{"indexed":true,"name":"to","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"Burn","type":"event"},{"anonymous":false,"inputs":[],"name":"Pause","type":"event"},{"anonymous":false,"inputs":[],"name":"Unpause","type":"event"}]  // ABI for your contract, from the Solidity compiler
-var address = "0x7b606Bc8ce7ba370b14BF5b43D1987Cbaadc8d6d"  // address of the contract
-
-var web3 = new Web3()
-web3.setProvider(new web3.providers.HttpProvider("https://mainnet.infura.io/dviMpOZYpWnP1EXQeFNJ"))
-web3.eth.contract(abi).at(address).totalSupply.call(function (err, result) {
-  // result here is the total supply of the ERC20 token
-  var totalSupply = result.c[0]
   
-  web3.eth.contract(abi).at(address).buySupply.call(function (err, result) {
-    // result here is the total supply of the ERC20 token
-    //alert(parseInt(result.e));
+  $.ajax({
+      type: 'get',
+      url: 'https://www.dunkpay.com/tickerFromDunkPay',
+      success: function(data) {
 
-    var buySupply = result.c[0]
+          if (data.result.isSuccess=='true') {
+              var successData = data.result.successData;
+              move(successData);
+          }
+      }
+  });
 
-    //alert(buySupply/totalSupply * 100)
+function move(successData) {
+  var totalSupply = successData.totalSupply/10000;
+  var contractSupply = successData.contractSupply/10000;
 
-    move(totalSupply/10000,buySupply/10000);
-
-  })
-})
-
-function move(totalSupply,buySupply) {
-  var percent = (totalSupply-buySupply)/totalSupply * 100;
+  var percent = (totalSupply-contractSupply)/totalSupply * 100;
   var elem = document.getElementById("myBar");   
   var myGoal = document.getElementById("myGoal");   
+  var myRate = document.getElementById("myRate");   
   var width = 0;
   var id = setInterval(frame, 10);
   function frame() {
     if (width >= percent) {
       clearInterval(id);
-      myGoal.innerHTML = '(' + numberWithCommas(totalSupply-buySupply) + " DNK / " + numberWithCommas(totalSupply) +" DNK)";
+      //myGoal.innerHTML =  numberWithCommas(parseInt(totalSupply-contractSupply)) + " DNK / " + numberWithCommas(parseInt(totalSupply)) +" DNK";
+
+      myRate.innerHTML = ' Buying ≈ ' + numberWithCommas(parseInt(successData.buyRate)) + ' DNK / ETH';
+      myRate.innerHTML += '<br> Refund ≈ ' + numberWithCommas(parseInt(successData.sellRate)) + ' DNK / ETH';
+      
     } else {
       width++; 
       elem.style.width = width + '%'; 
@@ -76,11 +75,10 @@ function numberWithCommas(x) {
 }
 
 </script>
-
 <div id="myProgress">
   <div id="myBar"></div>
 </div>
-<div id="myGoal"></div>
+<div id="myRate"><br><br></div>
 
       
         <a href="https://etherscan.io/address/0x7b606Bc8ce7ba370b14BF5b43D1987Cbaadc8d6d" class="btn">Buy Tokens</a>

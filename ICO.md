@@ -1,3 +1,32 @@
+# DunkPay.com
+
+DunkPay.com is the service for users who want to pay with cryptocurrency.
+Create a link, copy it and sell what you want.
+As soon as transaction is completed, confirmation process starts immediately
+Transactions are guaranteed by blockchain method.
+
+"Play ball. Make your dream."
+
+# INSTALLATION
+Include script on your site.
+
+```
+<script type="text/javascript" src="https://www.dunkpay.com/dunkpay.js"></script>
+```
+
+# USAGE
+
+For sell ​​with bitcoin
+
+```
+var dunkpay = new Dunkpay()
+dunkpay.type = "BTC"
+dunkpay.address = "1Lc1jhXdsB7t1XpTdNbrchnxKQide9tMia"
+dunkpay.amount = 0.001 
+
+dunkpay.shot()
+```
+
 # Dear friends,
 
 This white paper is related to selling DunkPay tokens. DunkPay is currently in service as a billing system with Cryptocurrency. DunkPay can currently make payments using BTC, BCH, ETH Cryptocurrency. If the user makes a payment through DunkPay, a 1% fee will be charged. We have decided to sell token the right to get this fee. DunkPay is a running  service. No specific sales terms or agreement. Refunds are also available at any time.
@@ -46,20 +75,20 @@ Apply the same units as ETH. 1 DNK can also be expressed as 1e18 jordan. Regretf
 
 When a customer deposits ETH into a smart contract address, the customer immediately receives the token with the same ETH address as the DunkPay token. Up to 50% bonus will apply depending on remaining sales volume.
 ```
-1 ETH = (100% + 50% * (Sales Remaining Volume / Total Issue volume)) * 1000 DNK
+1 ETH = (1 + 0.5 * (Sales Remaining Volume / Total Issue Volume)) * 1000 DNK
 
-Ex., In case of : 2,450,000 DNK of 10,000,000 DNK is remains.
-1 ETH = (1 + (0.5 * 0.245)) * 1000 = 1,122 DNK
+Ex., In case of : 2,450,000 DNK  of 10,000,000 DNK was sold
+1 ETH = 1.25 * 1000 = 1,250 DNK
 ```
 # DunkPay Token Selling (Refund)
 
-Customers can sell DunkPay tokens by running the Refund to Smart Contract address. It is reverse buying calculation. Up to 50% penalty will apply depending on remaining sales volume.
-
+Customers can sell DunkPay tokens by running the Refund to Smart Contract address. It is reverse buying calculation. (However, we will charge for 1% refund fee.)
 ```
-1 DNK = (50% + 50% * (Sales Remaining Volume / Total Issue Volume)) / 1000 ETH
+1 DNK = (1 - 0.5 * (Sales Remaining Volume / Total Issue Volume)) / 1000 ETH
 
-Ex., In case of : 2,450,000 DNK  of 10,000,000 DNK is remains.
-1,125 DNK = (562 + (562 * 0.245)) / 1000 = 0.699 ETH
+Ex., In case of : 2,450,000 DNK  of 10,000,000 DNK was sold
+1 DNK = 0.75 / 1000 = 0.00075 ETH
+Refund fee = 0.0000075 ETH
 ```
 # DunkPay Token Ending (bankruptcy)
 
