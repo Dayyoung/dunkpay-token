@@ -1,6 +1,6 @@
 # Dear friends,
 
-This white paper is related to selling DunkPay tokens. DunkPay is currently in service as a billing system with Cryptocurrency. DunkPay can currently make payments using BTC, BCH, ETH Cryptocurrency. If the user makes a payment through DunkPay, a 1% fee will be charged. We have decided to sell token the right to get this fee. DunkPay is a running  service. No specific sales terms or agreement. Refunds are also available at any time.
+This white paper is related to selling DunkPay tokens. DunkPay is a service that allows you to make payments using your Cryptocurrency. If the user makes a payment through DunkPay, we will charge a purchase fee. In addition, we are developing services that link with offline by applying DunkPay. We decided to sell DunkPay's service profits as tokens. DunkPay is a running service. No specific sales terms or constraints. Refunds are also available at any time.
 
 # Send ETH for buying , Send DNK for refunds.
 
@@ -73,11 +73,11 @@ The operation plan is very transparent. If the DunkPay token sale is successful,
 	<img width="70%" height="70%" src="assets/img/graph.png">
 </p>
 
-On the first day of each month, the contents of the execution are informed through the our site and subscribed email.
+On the first day of each month, the contents of the execution are informed through the our site.
 
 # Best-case Scenario
 
-If marketing costs exceed a certain level (1,000,000 USD), we will proceed with the NBA Dream Team Match in Las Vegas. Michael Jordan's 1992 Dream Team and Shaquille O'Neill's 1994 Dream Team match up. If you have more than a certain number of DunkPay tokens, you will have a free VOD and on-site viewing opportunity.
+If DunkPay token sale is successful, we will maximize profits by contributing to the popularization of cryptocurrency. The funding profits will be used again for the development of a cryptocurrency payment service. We will distributed Point Of Sale (POS) equipment for self-employed persons. ATM (Automatic Teller Machine) service that managed by self-employed person will also be coming out. Ultimately, we will proceed with the development of a user-centered low-fee DEX (Decentralized Exchange) that improves the current problem of centralized exchanges.
 
 # Conclusion
 
